@@ -1,13 +1,11 @@
 package com.example.kotlinbasics
 
 fun main(){
-    makeCoffee(1, "Alice") // call the function
-
-    makeCoffee(2, "Bob")
-
-    makeCoffee(3, "Roman")
-
-    makeCoffee(-1, "Doom")
+    println("Who is the coffee for? ")
+    val name = readLine()!!
+    println("How many spoons of sugar? ")
+    val sugarCount = readLine()!!.toInt()
+    makeCoffee(sugarCount, name)
 }
 
 // Define the function
